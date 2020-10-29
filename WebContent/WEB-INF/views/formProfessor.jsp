@@ -8,7 +8,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
-<link rel="StyleSheet" type="text/css" href="css/style.css" media="screen" >
+<link rel="StyleSheet" type="text/css" href="./css/style.css" media="screen" >
 <title>Insert title here</title>
 </head>
 <body>
@@ -20,21 +20,16 @@
 	
 	<main class="container">		
 		<form class="form-area" action="#" method="post">
-			<h1>Cadastrando novo Curso:</h1>
+			<h1>Cadastrando novo Professor:</h1>
 			
 			<div class="form-group">
-				<label for="nomeCurso">Nome do curso:</label>
-				<input class="form-control" type="text" name="nomeCurso" id="nomeCurso" />
+				<label for="nomeProfessor">Nome do Professor:</label>
+				<input class="form-control" type="text" name="nomeProfessor" id="nomeProfessor" />
 			</div>
 			
 			<div class="form-group">
-				<label for="periodoCurso">Periodicidade:</label>
-				<input class="form-control" type="text" name="periodoCurso" id="periodoCurso" />
-			</div>
-			
-			<div class="form-group">
-				<label for="descricaoCurso">Descrição:</label>
-				<textarea class="form-control" name="descricaoCurso" id="descricaoCurso" rows="3"></textarea>
+				<label for="titulacaoProfessor">Titulação:</label>
+				<input class="form-control" type="text" name="titulacaoProfessor" id="titulacaoProfessor" />
 			</div>
 			
 			<div class="form-footer">
@@ -46,7 +41,7 @@
 	</main>
 	
 	<footer>		
-		
+				
 	</footer>
 </body>
 </html>

@@ -14,7 +14,7 @@
 <body>
 	<header>
 		<nav class="navbar">
-			<img class="img.fluid" src="img/logo2.png" />
+			<img class="img.fluid" src="img/logo.png" />
 			<h2>Sistema de Gestão Acadêmica </h2>
 			<label></label>
 		</nav>
@@ -23,31 +23,31 @@
 	<main>
 		<ul class="menu-main">
 			<li class="li-index">
-				<a class="btn menu-header" href="/EletivaWeb/formAluno.jsp" role="button">
+				<a class="btn menu-header" href="/EletivaWeb/entrada?action=FormAluno" role="button">
 					Alunos
 				</a>
 			</li>
 			
 			<li class="li-index">
-				<a class="btn menu-header" href="/EletivaWeb/formProfessor.jsp" role="button">
+				<a class="btn menu-header" href="/EletivaWeb/entrada?action=FormProfessor" role="button">
 					Professores
 				</a>
 			</li>	
 					
 			<li class="li-index">
-				<a class="btn menu-header" href="/EletivaWeb/formCurso.jsp" role="button">				
+				<a class="btn menu-header" href="/EletivaWeb/entrada?action=FormCurso" role="button">				
 					Cursos
 				</a>
 			</li>
 			
 			<li class="li-index">
-				<a class="btn menu-header" href="/EletivaWeb/formDisciplina.jsp" role="button">
+				<a class="btn menu-header" href="/EletivaWeb/entrada?action=FormDisciplina" role="button">
 					Disciplinas
 				</a>
 			</li>
 			
 			<li class="li-index">
-				<a class="btn menu-header" href="/EletivaWeb/formTurma.jsp" role="button">
+				<a class="btn menu-header" href="/EletivaWeb/entrada?action=FormTurma" role="button">
 					Turmas
 				</a>
 			</li>

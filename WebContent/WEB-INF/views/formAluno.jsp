@@ -8,7 +8,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
-<link rel="StyleSheet" type="text/css" href="css/style.css" media="screen" >
+<link rel="StyleSheet" type="text/css" href="./css/style.css" media="screen" >
 <title>Insert title here</title>
 </head>
 <body>
@@ -19,24 +19,25 @@
 	</header>
 	
 	<main class="container">		
-		<form class="form-area" action="#" method="post">
-			<h1>Cadastrando novo Professor:</h1>
+		<form class="form-area" action="${ linkEntradaServlet }" method="post">
+			<h1>Cadastrando novo Aluno:</h1>
 			
 			<div class="form-group">
-				<label for="nomeProfessor">Nome do Professor:</label>
-				<input class="form-control" type="text" name="nomeProfessor" id="nomeProfessor" />
+				<label for="nomeAluno">Nome do Aluno:</label>
+				<input class="form-control" type="text" name="nomeAluno" id="nomeAluno" />
 			</div>
 			
 			<div class="form-group">
-				<label for="titulacaoProfessor">Titulação:</label>
-				<input class="form-control" type="text" name="titulacaoProfessor" id="titulacaoProfessor" />
+				<label for="turmaAluno">Turma:</label>
+				<input class="form-control" type="text" name="turmaAluno" id="turmaAluno" />
 			</div>
+			
+			<input type="hidden" name="action" value="CadastrarAluno" />
 			
 			<div class="form-footer">
 				<button type="submit" class="btn btn-secondary">Cadastrar</button>
 				<a class="btn btn-secondary" href="index.jsp" role="button">Voltar</a>
-			</div>
-			
+			</div>			
 		</form>
 	</main>
 	

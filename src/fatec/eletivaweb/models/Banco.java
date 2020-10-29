@@ -5,13 +5,23 @@ import java.util.List;
 
 public class Banco {
 
-	private static List<Curso> lista = new ArrayList<>();
+	private static List<Curso> listaCursos = new ArrayList<>();
+	private static List<Aluno> listaAlunos = new ArrayList<>();
+
 	
-	public void adiciona(Curso curso) {
-		Banco.lista.add(curso);
+	public void addAluno(Aluno aluno) {
+		Banco.listaAlunos.add(aluno);
+	}
+	
+	public List<Aluno> getAluno() {
+		return Banco.listaAlunos;
+	}
+	
+	public void addCurso(Curso curso) {
+		Banco.listaCursos.add(curso);
 	}
 	
 	public List<Curso> getCurso() {
-		return Banco.lista;
+		return Banco.listaCursos;
 	}
 }

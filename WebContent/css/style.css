@@ -61,9 +61,9 @@ footer p {
 .form-area {
 	padding: 30px;
 	
-	border: 1px solid #ced4da;
+	border: 1px solid #888888;
 	border-radius: 10px;
-	box-shadow: 1px 5px 20px black;
+	box-shadow: 5px 10px 10px #888888;
 	
 	font-size: 20px;	
 	background-image: linear-gradient(to right, #eeeeee, #f8f8ff);
