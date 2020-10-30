@@ -14,12 +14,16 @@
 <body>
 	<header>
 		<nav class="navbar">
-			<img src="img/logo.png" />
+			<a href="index.jsp">
+				<img class="img.fluid" src="img/logo.png" />
+			</a>			
+			<h2>Sistema de Gestão Acadêmica </h2>
+			<label></label>
 		</nav>
 	</header>
 	
 	<main class="container">		
-		<form class="form-area" action="#" method="post">
+		<form class="form-area" action="${ linkEntradaServlet }" method="post">
 			<h1>Cadastrando novo Professor:</h1>
 			
 			<div class="form-group">
@@ -31,6 +35,8 @@
 				<label for="titulacaoProfessor">Titulação:</label>
 				<input class="form-control" type="text" name="titulacaoProfessor" id="titulacaoProfessor" />
 			</div>
+			
+			<input type="hidden" name="action" value="CadastrarProfessor" />
 			
 			<div class="form-footer">
 				<button type="submit" class="btn btn-secondary">Cadastrar</button>

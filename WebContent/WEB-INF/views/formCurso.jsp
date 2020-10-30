@@ -14,12 +14,16 @@
 <body>
 	<header>
 		<nav class="navbar">
-			<img src="img/logo.png" />
+			<a href="index.jsp">
+				<img class="img.fluid" src="img/logo.png" />
+			</a>			
+			<h2>Sistema de Gestão Acadêmica </h2>
+			<label></label>
 		</nav>
 	</header>
 	
 	<main class="container">		
-		<form class="form-area" action="#" method="post">
+		<form class="form-area" action="${ linkEntradaServlet }" method="post">
 			<h1>Cadastrando novo Curso:</h1>
 			
 			<div class="form-group">
@@ -36,6 +40,8 @@
 				<label for="descricaoCurso">Descrição:</label>
 				<textarea class="form-control" name="descricaoCurso" id="descricaoCurso" rows="3"></textarea>
 			</div>
+			
+			<input type="hidden" name="action" value="CadastrarCurso" />
 			
 			<div class="form-footer">
 				<button type="submit" class="btn btn-secondary">Cadastrar</button>

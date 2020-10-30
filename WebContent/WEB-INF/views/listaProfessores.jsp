@@ -9,12 +9,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-	
-	<h2>Lista de Alunos:</h2>
+
+	<h2>Lista de Professores:</h2>
 	<ul>
-		<c:forEach items="${ alunos }" var="aluno">
+		<c:forEach items="${ professores }" var="professor">
 			<li>
-				${ aluno.nome } - ${ aluno.turma }
+				${ professor.nome } - ${ professor.titulacao }
 			</li>
 		</c:forEach>
 	</ul>

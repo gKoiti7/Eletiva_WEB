@@ -3,27 +3,31 @@ package fatec.eletivaweb.models;
 public class Curso {
 
 	private int id;
-	private String nomeCurso;
-	private int periodicidade;
+	private String nome;
+	private String periodicidade;
 	private String descricao;
 	
 	
-	public Curso(String nome, int periodicidade, String descricao) {
-		this.nomeCurso = nome;
+	public Curso(String nome, String periodicidade, String descricao) {
+		this.nome = nome;
 		this.periodicidade = periodicidade;
 		this.descricao = descricao;
 	}
 	
-	public String getNomeCurso() {
-		return nomeCurso;
+	public Curso() {
+		
 	}
-	public void setNomeCurso(String nomeCurso) {
-		this.nomeCurso = nomeCurso;
+	
+	public String getNome() {
+		return nome;
 	}
-	public int getPeriodicidade() {
+	public void setNome(String nomeCurso) {
+		this.nome = nomeCurso;
+	}
+	public String getPeriodicidade() {
 		return periodicidade;
 	}
-	public void setPeriodicidade(int periodicidade) {
+	public void setPeriodicidade(String periodicidade) {
 		this.periodicidade = periodicidade;
 	}
 	public String getDescricao() {

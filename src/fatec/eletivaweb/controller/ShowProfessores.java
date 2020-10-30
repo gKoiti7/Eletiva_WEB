@@ -8,22 +8,22 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import fatec.eletivaweb.models.Banco;
-import fatec.eletivaweb.models.Curso;
+import fatec.eletivaweb.models.Professor;
 
 
-public class ShowCursos implements Action {
+public class ShowProfessores implements Action {
 
 	@Override
 	public String run(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		System.out.println("Listando cursos!");
+		System.out.println("Listando Professores");
 		
 		Banco banco = new Banco();
-		List<Curso> lista = banco.getCurso();
+		List<Professor> lista = banco.getProfessor();
 			
-		request.setAttribute("cursos", lista);
+		request.setAttribute("professores", lista);
 		
-		return "forward:listaCursos.jsp";
+		return "forward:listaProfessores.jsp";
 	}
 
 }

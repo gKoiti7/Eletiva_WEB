@@ -14,7 +14,11 @@
 <body>
 	<header>
 		<nav class="navbar">
-			<img src="img/logo.png" />
+			<a href="index.jsp">
+				<img class="img.fluid" src="img/logo.png" />
+			</a>			
+			<h2>Sistema de Gestão Acadêmica </h2>
+			<label></label>		
 		</nav>
 	</header>
 	
