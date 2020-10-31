@@ -8,6 +8,8 @@ public class Banco {
 	private static List<Aluno> listaAlunos = new ArrayList<>();
 	private static List<Professor> listaProfessores = new ArrayList<>();
 	private static List<Curso> listaCursos = new ArrayList<>();
+	private static List<Disciplina> listaDisciplina = new ArrayList<>();
+	private static List<Turma> listaTurma = new ArrayList<>();
 	
 	public void addAluno(Aluno aluno) {
 		Banco.listaAlunos.add(aluno);
@@ -31,6 +33,22 @@ public class Banco {
 	
 	public List<Curso> getCurso() {
 		return Banco.listaCursos;
+	}
+	
+	public void addDisciplina(Disciplina disciplina) {
+		Banco.listaDisciplina.add(disciplina);
+	}
+	
+	public List<Disciplina> getDisciplina(){
+		return Banco.listaDisciplina;
+	}
+	
+	public void addTurma(Turma turma) {
+		Banco.listaTurma.add(turma);
+	}
+	
+	public List<Turma> getTurma() {
+		return Banco.listaTurma;
 	}
 	
 }

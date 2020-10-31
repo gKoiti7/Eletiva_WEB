@@ -23,7 +23,7 @@
 	</header>
 	
 	<main class="container">		
-		<form class="form-area" action="#" method="post">
+		<form class="form-area" action="${ linkEntradaServlet }" method="post">
 			<h1>Cadastrando nova Disciplina:</h1>
 			
 			<div class="form-group">
@@ -40,6 +40,8 @@
 				<label for="ementaDisciplina">Ementa:</label>
 				<textarea class="form-control" name="ementaDisciplina" id="ementaDisciplina" rows="3"></textarea>
 			</div>
+			
+			<input type="hidden" name="action" value="CadastrarDisciplina" />
 			
 			<div class="form-footer">
 				<button type="submit" class="btn btn-secondary">Cadastrar</button>

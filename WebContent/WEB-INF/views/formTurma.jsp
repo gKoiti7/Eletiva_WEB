@@ -23,13 +23,20 @@
 	</header>
 	
 	<main class="container">		
-		<form class="form-area" action="#" method="post">
+		<form class="form-area" action="${ linkEntradaServlet }" method="post">
 			<h1>Cadastrando nova Turma:</h1>
+			
+			<div class="form-group">
+				<label for="nomeTurma">Nome:</label>
+				<input class="form-control" type="text" name="nomeTurma" id="nomeTurma" />
+			</div>
 			
 			<div class="form-group">
 				<label for="descricaoTurma">Descrição:</label>
 				<input class="form-control" type="text" name="descricaoTurma" id="descricaoTurma" />
 			</div>
+			
+			<input type="hidden" name="action" value="CadastrarTurma" />
 			
 			<div class="form-footer">
 				<button type="submit" class="btn btn-secondary">Cadastrar</button>
