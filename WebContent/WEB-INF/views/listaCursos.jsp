@@ -15,6 +15,7 @@
 		<c:forEach items="${ cursos }" var="curso">
 			<li>
 				${ curso.nome } - ${ curso.periodicidade } - ${ curso.descricao }
+				<a href="/EletivaWeb/entrada?action=SelectCurso&id=${ curso.id }">Editar</a>
 			</li>
 		</c:forEach>
 	</ul>

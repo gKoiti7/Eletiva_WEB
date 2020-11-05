@@ -15,6 +15,7 @@
 		<c:forEach items="${ disciplinas }" var="disciplina">
 			<li>
 				${ disciplina.nome } - ${ disciplina.cargaHoraria } horas - ${ disciplina.ementa }
+				<a href="/EletivaWeb/entrada?action=SelectDisciplina&id=${ disciplina.id }">Editar</a>
 			</li>
 		</c:forEach>
 	</ul>

@@ -15,6 +15,7 @@
 		<c:forEach items="${ alunos }" var="aluno">
 			<li>
 				${ aluno.nome } - ${ aluno.turma }
+				<a href="/EletivaWeb/entrada?action=SelectAluno&id=${ aluno.id }">Editar</a>
 			</li>
 		</c:forEach>
 	</ul>

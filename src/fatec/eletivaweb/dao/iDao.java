@@ -2,7 +2,7 @@ package fatec.eletivaweb.dao;
 
 import java.util.List;
 
-public interface iDao {
+public interface iDao<Object> {
 
 	boolean create(Object o);
 	
