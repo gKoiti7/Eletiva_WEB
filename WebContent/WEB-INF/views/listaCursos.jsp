@@ -16,6 +16,7 @@
 			<li>
 				${ curso.nome } - ${ curso.periodicidade } - ${ curso.descricao }
 				<a href="/EletivaWeb/entrada?action=SelectCurso&id=${ curso.id }">Editar</a>
+				<a href="/EletivaWeb/entrada?action=Delete&nome=curso&id=${ curso.id }">Excluir</a>
 			</li>
 		</c:forEach>
 	</ul>

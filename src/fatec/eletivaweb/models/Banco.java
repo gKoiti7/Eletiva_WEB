@@ -1,6 +1,7 @@
 package fatec.eletivaweb.models;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class Banco {
@@ -96,5 +97,79 @@ public class Banco {
 		}
 		return null;
 	}
+
+	public Turma buscaTurmaId(int id) {
+		for (Turma turma : listaTurma) {
+			if(turma.getId() == id) {
+				return turma;
+			}
+		}
+		return null;
+	}
+
+	public void removeAluno(int id) {
+		
+		Iterator<Aluno> it = listaAlunos.iterator();
+		
+		while(it.hasNext()) {
+			Aluno aluno = it.next();
+			
+			if(aluno.getId() == id) {
+				it.remove();
+			}
+		}
+	}
 	
+	public void removeProfessor(int id) {
+		
+		Iterator<Professor> it = listaProfessores.iterator();
+		
+		while(it.hasNext()) {
+			Professor professor = it.next();
+			
+			if(professor.getId() == id) {
+				it.remove();
+			}
+		}
+	}
+	
+	public void removeCurso(int id) {
+		
+		Iterator<Curso> it = listaCursos.iterator();
+		
+		while(it.hasNext()) {
+			Curso curso = it.next();
+			
+			if(curso.getId() == id) {
+				it.remove();
+			}
+		}
+	}
+	
+	
+	public void removeDisciplina(int id) {
+		
+		Iterator<Disciplina> it = listaDisciplina.iterator();
+		
+		while(it.hasNext()) {
+			Disciplina disciplina = it.next();
+			
+			if(disciplina.getId() == id) {
+				it.remove();
+			}
+		}
+	}
+	
+	public void removeTurma(int id) {
+		
+		Iterator<Turma> it = listaTurma.iterator();
+		
+		while(it.hasNext()) {
+			Turma turma = it.next();
+			
+			if(turma.getId() == id) {
+				it.remove();
+			}
+		}
+	}
 }

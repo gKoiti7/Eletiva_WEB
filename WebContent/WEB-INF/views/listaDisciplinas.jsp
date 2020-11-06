@@ -16,6 +16,7 @@
 			<li>
 				${ disciplina.nome } - ${ disciplina.cargaHoraria } horas - ${ disciplina.ementa }
 				<a href="/EletivaWeb/entrada?action=SelectDisciplina&id=${ disciplina.id }">Editar</a>
+				<a href="/EletivaWeb/entrada?action=Delete&nome=disciplina&id=${ disciplina.id }">Excluir</a>
 			</li>
 		</c:forEach>
 	</ul>

@@ -10,11 +10,13 @@
 </head>
 <body>
 	
-	<h2>Lista de Alunos:</h2>
+	<h2>Lista de Turmas:</h2>
 	<ul>
 		<c:forEach items="${ turmas }" var="turma">
 			<li>
 				${ turma.nome } - ${ turma.descricao }
+				<a href="/EletivaWeb/entrada?action=SelectTurma&id=${ turma.id }">Editar</a>
+				<a href="/EletivaWeb/entrada?action=Delete&nome=turma&id=${ turma.id }">Excluir</a>
 			</li>
 		</c:forEach>
 	</ul>

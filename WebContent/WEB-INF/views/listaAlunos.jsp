@@ -16,6 +16,7 @@
 			<li>
 				${ aluno.nome } - ${ aluno.turma }
 				<a href="/EletivaWeb/entrada?action=SelectAluno&id=${ aluno.id }">Editar</a>
+				<a href="/EletivaWeb/entrada?action=Delete&nome=aluno&id=${ aluno.id }">Excluir</a>
 			</li>
 		</c:forEach>
 	</ul>
