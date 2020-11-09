@@ -1,0 +1,48 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<header>  
+<nav class="navbar navbar-light" style="background-color: #BDC3C7">
+  <!-- Conteúdo do navbar -->
+            <a class="navbar-brand" href="index.php"></a>   
+			
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+			
+			<div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+				<li class="nav-item active">
+                    <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+                    <a class="nav-link" href="quemsomos.php">Desenvolvedores do AGIS</a>
+				</li>
+				<li class="nav-item">
+                    <a class="nav-link" href="sobreosite.php">Sobre o AGIS</a>
+				</li>
+				</ul>
+			</div>	
+</nav>			
+</header>
+
+</head>
+<body>
+
+
+
+</body>
+</html>
+<!-- 
+<h1>Cadastro de Nomes</h1>
+<br>
+<form name="formulario" action="cadastro.jsp" method="post">
+	<input type="text" name="nome">
+	<input type="submit">
+</form>
+-->
