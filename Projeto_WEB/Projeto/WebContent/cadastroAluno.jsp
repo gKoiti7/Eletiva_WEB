@@ -1,66 +1,28 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="pt-br">
 
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="description" content="">
-		<meta name="author" content="">
-		<link rel="icon" href="../../../../favicon.ico">
-		<link rel="shortcut icon" href="assets/imagens/logo.png" sizes="32x32" type="image/png">
-    	<link rel="canonical" href="https://getbootstrap.com/docs/4.0/components/navbar/">
-    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-	
-    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-	
-    	<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet">
+<head>
+<%@ include file="parts/meta.jsp" %>
+ 
+<title>Insert title here</title>
 
-		<title>Cadastrar Aluno</title>
-
-		<!-- Principal CSS do Bootstrap -->
+<!-- Principal CSS do Bootstrap -->
 		<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
 
-		<!-- Estilos customizados para esse template -->
+<!-- Estilos customizados para esse template -->
 		<link href="form-validation.css" rel="stylesheet">
 		
-		<header>  
-<nav class="navbar navbar-light" style="background-color: #BDC3C7">
-  <!-- Conte˙do do navbar -->
-            <a class="navbar-brand" href="index.php"></a>   
-			
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-			
-			<div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-				<li class="nav-item active">
-                    <a class="nav-link" href="index.jsp">Home <span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-                    <a class="nav-link" href="quemsomos.jsp">Desenvolvedores do AGIS</a>
-				</li>
-				<li class="nav-item">
-                    <a class="nav-link" href="sobreosite.jsp">Sobre o AGIS</a>
-				</li>
-				</ul>
-			</div>	
-</nav>			
-</header>
-		
-	</head>
+
+<%@ include file="parts/header.jsp" %>
+</head>
 
     <body class="bg-light">
 
     <div class="container">
       <div class="py-5 text-center">
         <h2>Cadastrar Aluno</h2>
-        <p class="lead">Esta seÁ„o do AGIS necessita das seguintes informaÁıes do aluno(a):</br>RG, CPF</p>
+        <p class="lead">Esta se√ß√£o do AGIS necessita das seguintes informa√ß√µes do aluno(a):</br>RG, CPF</p>
       </div>
 		
       <div class="row">
@@ -75,7 +37,7 @@
                 <label for="Nome">Nome completo do aluno</label>
                 <input type="text" class="form-control" id="Nome" placeholder="Gustavo" value="" required="" name="nome">
                 <div class="invalid-feedback">
-                  … obrigatÛrio inserir um nome v·lido.
+                  √â obrigat√≥rio inserir um nome v√°lido.
                 </div>
               </div>
             </div>
@@ -85,7 +47,7 @@
                 <label for="RG">RG do aluno</label>
                 <input type="number" class="form-control" id="RG" placeholder="012345678" value="" required="" name="rg">
                 <div class="invalid-feedback">
-                  … obrigatÛrio inserir um RG v·lido.
+                  √â obrigat√≥rio inserir um RG v√°lido.
                 </div>
               </div>
             </div>
@@ -95,7 +57,7 @@
                 <label for="CPF">CPF do aluno</label>
                 <input type="number" class="form-control" id="CPF" placeholder="01234567890" value="" required="" name="cpf">
                 <div class="invalid-feedback">
-                  … obrigatÛrio inserir um CPF v·lido.
+                  √â obrigat√≥rio inserir um CPF v√°lido.
                 </div>
               </div>
             </div>
@@ -104,7 +66,7 @@
               <label for="email">Email <span class="text-muted">(Opcional)</span></label>
               <input type="text" class="form-control" id="email" placeholder="fulano@exemplo.com" name="e-mail">
               <div class="invalid-feedback">
-                Por favor, insira um endereÁo de e-mail v·lido.
+                Por favor, insira um endere√ßo de e-mail v√°lido.
               </div>
             </div>
 			
@@ -113,7 +75,7 @@
                 <label for="cc-expiracao">Ano de nascimento</label>
                 <input type="number" class="form-control" id="cc-expiracao" placeholder="2001" required="" name="nascimento">
                 <div class="invalid-feedback">
-                  Ano de nascimento È obrigatÛrio.
+                  Ano de nascimento √© obrigat√≥rio.
                 </div>
               </div>
             </div>
@@ -122,13 +84,13 @@
             <div class="d-block my-3">
 			
               <div class="custom-control custom-radio">
-                <input id="analise" name="aval" type="radio" class="custom-control-input" checked="" required="" value="An·lise e Desenvolvimento de Sistemas">
-                <label class="custom-control-label" for="analise">An·lise e Desenvolvimento de Sistemas</label>
+                <input id="analise" name="aval" type="radio" class="custom-control-input" checked="" required="" value="An√°lise e Desenvolvimento de Sistemas">
+                <label class="custom-control-label" for="analise">An√°lise e Desenvolvimento de Sistemas</label>
               </div>
 			  
               <div class="custom-control custom-radio">
-                <input id="agro" name="aval" type="radio" class="custom-control-input" required="" value="AgronegÛcio">
-                <label class="custom-control-label" for="agro">AgronegÛcio</label>
+                <input id="agro" name="aval" type="radio" class="custom-control-input" required="" value="Agroneg√≥cio">
+                <label class="custom-control-label" for="agro">Agroneg√≥cio</label>
               </div>
 			  
               <div class="custom-control custom-radio">
@@ -142,8 +104,8 @@
               </div>
 			  
 			  <div class="custom-control custom-radio">
-                <input id="adm" name="aval" type="radio" class="custom-control-input" required="" value="AdministraÁ„o">
-                <label class="custom-control-label" for="adm">AdministraÁ„o</label>
+                <input id="adm" name="aval" type="radio" class="custom-control-input" required="" value="Administra√ß√£o">
+                <label class="custom-control-label" for="adm">Administra√ß√£o</label>
               </div>
 			  
             </div>
@@ -163,19 +125,19 @@
 
     <!-- Principal JavaScript do Bootstrap
     ================================================== -->
-    <!-- Foi colocado no final para a p·gina carregar mais r·pido -->
+    <!-- Foi colocado no final para a p√°gina carregar mais r√°pido -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="../../assets/js/vendor/popper.min.js"></script>
     <script src="../../dist/js/bootstrap.min.js"></script>
     <script src="../../assets/js/vendor/holder.min.js"></script>
     <script>
-      // Exemplo de JavaScript para desativar o envio do formul·rio, se tiver algum campo inv·lido.
+      // Exemplo de JavaScript para desativar o envio do formul√°rio, se tiver algum campo inv√°lido.
       (function() {
         'use strict';
 
         window.addEventListener('load', function() {
-          // Selecione todos os campos que nÛs queremos aplicar estilos Bootstrap de validaÁ„o customizados.
+          // Selecione todos os campos que n√≥s queremos aplicar estilos Bootstrap de valida√ß√£o customizados.
           var forms = document.getElementsByClassName('needs-validation');
 
           // Faz um loop neles e previne envio
@@ -194,20 +156,6 @@
 
 </body>
 
-   <footer class="footer mt-auto py-3" style="background-color: #BDC3C7">
-		
-    <div class="text-center">
-        <p class="texto-footer m-0">
-            <a href="quemsomos.jsp">
-				Desenvolvido por:
-				Gustavo Koiti Kuwabata/
-				Luciana Miki Ochiai/
-				Raphael Rugna Vaqueiro<br>
-				Fatec MC 2020
-			</a>
-        </p>
-    </div>
-	
-</footer>
+<%@ include file="parts/footer.jsp" %> 
 
 </html>
