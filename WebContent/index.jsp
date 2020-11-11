@@ -23,37 +23,41 @@
 	</header>
 	
 	<main>
-		<ul class="menu-main">
+		<form class="menu-main" action="${ linkEntradaServlet }" method="get">
 			<li class="li-index">
-				<a class="btn menu-header" href="/EletivaWeb/entrada?action=FormAluno" role="button">
-					Alunos
-				</a>
+				<input type="hidden" name="action" value="Form" />
+				<input type="hidden" name="form" value="aluno" />
+				<button class="btn menu-header" type="submit">Aluno</button>
 			</li>
-			
+		</form>
+		<form class="menu-main" action="${ linkEntradaServlet }" method="get">	
 			<li class="li-index">
-				<a class="btn menu-header" href="/EletivaWeb/entrada?action=FormProfessor" role="button">
-					Professores
-				</a>
+				<input type="hidden" name="action" value="Form" />
+				<input type="hidden" name="form" value="professor" />
+				<button class="btn menu-header" type="submit">Professores</button>
 			</li>	
-					
+		</form>	
+		<form class="menu-main" action="${ linkEntradaServlet }" method="get">	
 			<li class="li-index">
-				<a class="btn menu-header" href="/EletivaWeb/entrada?action=FormCurso" role="button">				
-					Cursos
-				</a>
+				<input type="hidden" name="action" value="Form" />
+				<input type="hidden" name="form" value="curso" />
+				<button class="btn menu-header" type="submit">Curso</button>
 			</li>
-			
+		</form>	
+		<form class="menu-main" action="${ linkEntradaServlet }" method="get">	
 			<li class="li-index">
-				<a class="btn menu-header" href="/EletivaWeb/entrada?action=FormDisciplina" role="button">
-					Disciplinas
-				</a>
+				<input type="hidden" name="action" value="Form" />
+				<input type="hidden" name="form" value="disciplina" />
+				<button class="btn menu-header" type="submit">Disciplina</button>
 			</li>
-			
+		</form>
+		<form class="menu-main" action="${ linkEntradaServlet }" method="get">	
 			<li class="li-index">
-				<a class="btn menu-header" href="/EletivaWeb/entrada?action=FormTurma" role="button">
-					Turmas
-				</a>
+				<input type="hidden" name="action" value="Form" />
+				<input type="hidden" name="form" value="turma" />
+				<button class="btn menu-header" type="submit">Turma</button>
 			</li>
-		</ul>
+		</form>
 	</main>
 	
 	<footer>		
