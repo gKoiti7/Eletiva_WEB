@@ -33,7 +33,7 @@
 			</div>
 			
 			<div class="form-footer">
-				<button type="submit" class="btn btn-secondary">Cadastrar</button>
+				<button type="submit" class="btn btn-secondary" href="listaAluno.jsp">Cadastrar</button>
 				<a class="btn btn-secondary" href="index.jsp" role="button">Voltar</a>
 			</div>			
 		</form>
