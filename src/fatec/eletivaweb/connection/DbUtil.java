@@ -17,7 +17,7 @@ public class DbUtil {
                 String password = "";
                 String driver = "com.mysql.cj.jdbc.Driver";
                 Class.forName(driver);
-                connection = DriverManager.getConnection("jdbc:mysql://localhost:3308/web?useTimezone=true&serverTimezone=UTC", user, password);
+                connection = DriverManager.getConnection("jdbc:mysql://localhost/web?useTimezone=true&serverTimezone=UTC", user, password);
             } catch (ClassNotFoundException e) {
                 e.printStackTrace();
             } catch (SQLException e) {
