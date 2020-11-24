@@ -6,8 +6,9 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import fatec.eletivaweb.dao.AlunoDAO;
+import fatec.eletivaweb.dao.DAO;
 import fatec.eletivaweb.models.Aluno;
-import fatec.eletivaweb.models.Banco;
 
 public class SelectAluno implements Action {
 
@@ -16,12 +17,16 @@ public class SelectAluno implements Action {
 		
 		System.out.println("Mostrando Aluno selecionado");
 		
-		int id = Integer.parseInt(request.getParameter("id"));
+		int userId = Integer.parseInt(request.getParameter("id"));
 		
-		Banco banco = new Banco();
-		Aluno aluno = banco.buscaAlunoId(id);
+		Aluno aluno = new Aluno();
 		
-		System.out.println(aluno.getNome());
+		System.out.println("Acessando banco...");
+		
+		DAO<Aluno> alunoDAO = new AlunoDAO();
+		aluno = alunoDAO.getUserById(userId);
+		
+		System.out.println("Aluno selecionado");
 		
 		request.setAttribute("aluno", aluno);
 		

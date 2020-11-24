@@ -1,14 +1,16 @@
 package fatec.eletivaweb.controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import fatec.eletivaweb.dao.AlunoDAO;
+import fatec.eletivaweb.dao.DAO;
 import fatec.eletivaweb.models.Aluno;
-import fatec.eletivaweb.models.Banco;
 
 
 public class ShowAlunos implements Action {
@@ -18,8 +20,9 @@ public class ShowAlunos implements Action {
 		
 		System.out.println("Listando Alunos");
 		
-		Banco banco = new Banco();
-		List<Aluno> lista = banco.getAluno();
+		DAO<Aluno> alunoDAO = new AlunoDAO();
+		List<Aluno> lista = new ArrayList<Aluno>();
+		lista = alunoDAO.read();
 			
 		request.setAttribute("alunos", lista);
 		

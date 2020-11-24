@@ -6,20 +6,43 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+<link rel="StyleSheet" type="text/css" href="./css/style.css" media="screen" >
 <title>Insert title here</title>
 </head>
 <body>
 	
-	<h2>Lista de Disciplina:</h2>
-	<ul>
-		<c:forEach items="${ disciplinas }" var="disciplina">
-			<li>
-				${ disciplina.nome } - ${ disciplina.cargaHoraria } horas - ${ disciplina.ementa }
-				<a href="/EletivaWeb/entrada?action=SelectDisciplina&id=${ disciplina.id }">Editar</a>
-				<a href="/EletivaWeb/entrada?action=Delete&nome=disciplina&id=${ disciplina.id }">Excluir</a>
-			</li>
-		</c:forEach>
-	</ul>
+	<c:import url="header.jsp" />
+	
+	<div class="container">
+		<h2>Lista de Disciplinas:</h2>
+		
+		<table class="table mt-5">
+			<thead>
+				<tr>
+					<th scope="col">Nome</th>
+					<th scope="col">Turma</th>
+					<th scope="col"></th>
+					<th scope="col"></th>
+				</tr>
+			</thead>
+			
+			<tbody>
+			
+			<c:forEach items="${ disciplinas }" var="disciplina">
+				<tr>
+					<th>${ disciplina.nome }</th>
+					<th>${ disciplina.cargaHoraria } h</th>
+					<th>${ disciplina.ementa }</th>
+					<th><a href="/EletivaWeb/entrada?action=SelectDisciplina&id=${ disciplina.id }">Editar</a></th>
+					<th><a href="/EletivaWeb/entrada?action=Delete&nome=disciplina&id=${ disciplina.id }">Excluir</a></th>
+				</tr>
+			</c:forEach>
+					
+			</tbody>
+		</table>
+			
+	</div>
 	
 </body>
 </html>

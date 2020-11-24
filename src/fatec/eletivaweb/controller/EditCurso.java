@@ -6,7 +6,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import fatec.eletivaweb.models.Banco;
+import fatec.eletivaweb.dao.CursoDAO;
+import fatec.eletivaweb.dao.DAO;
 import fatec.eletivaweb.models.Curso;
 
 public class EditCurso implements Action{
@@ -21,11 +22,14 @@ public class EditCurso implements Action{
 		String descricao = request.getParameter("descricaoCurso");
 		int id = Integer.parseInt(request.getParameter("idCurso"));
 		
-		Banco banco = new Banco();
-		Curso curso = banco.buscaCursoId(id);
-		curso.setNome(nome);
-		curso.setPeriodicidade(periodo);
-		curso.setDescricao(descricao);
+		Curso user = new Curso(id, nome, periodo, descricao);
+		
+		System.out.println("Acessando banco...");
+		
+		DAO<Curso> cursoDAO = new CursoDAO();
+		cursoDAO.update(user);
+		
+		System.out.println("Alteração realizada");
 		
 		return "redirect:entrada?action=ShowCursos";
 	}

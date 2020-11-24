@@ -6,20 +6,45 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+<link rel="StyleSheet" type="text/css" href="./css/style.css" media="screen" >
 <title>Insert title here</title>
 </head>
 <body>
+
+	<c:import url="header.jsp" />
 	
-	<h2>Lista de Alunos:</h2>
-	<ul>
-		<c:forEach items="${ alunos }" var="aluno">
-			<li>
-				${ aluno.nome } - ${ aluno.turma }
-				<a href="/EletivaWeb/entrada?action=SelectAluno&id=${ aluno.id }">Editar</a>
-				<a href="/EletivaWeb/entrada?action=Delete&nome=aluno&id=${ aluno.id }">Excluir</a>
-			</li>
-		</c:forEach>
-	</ul>
-	
+	<div class="container">
+		<h2>Lista de Alunos:</h2>
+		
+		<table class="table mt-5">
+			<thead>
+				<tr>
+					<th scope="col">Nome</th>
+					<th scope="col">Turma</th>
+					<th scope="col"></th>
+					<th scope="col"></th>
+				</tr>
+			</thead>
+			
+			<tbody>
+			
+			<c:forEach items="${ alunos }" var="aluno">
+				<tr>
+				
+					<th>${ aluno.nome }</th>
+					<th>${ aluno.turma }</th>
+					<th><a href="/EletivaWeb/entrada?action=SelectAluno&id=${ aluno.id }">Editar</a></th>
+					<th><a href="/EletivaWeb/entrada?action=Delete&nome=aluno&id=${ aluno.id }">Excluir</a></th>
+				
+				</tr>
+			</c:forEach>
+			
+			</tbody>
+
+		</table>
+			
+	</div>
+		
 </body>
 </html>

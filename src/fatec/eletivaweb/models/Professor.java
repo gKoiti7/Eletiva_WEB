@@ -15,6 +15,12 @@ public class Professor {
 		
 	}
 
+	public Professor(int id, String nome, String titulacao) {
+		this.id = id;
+		this.nome = nome;
+		this.titulacao = titulacao;
+	}
+
 	public int getId() {
 		return id;
 	}

@@ -1,13 +1,15 @@
 package fatec.eletivaweb.controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import fatec.eletivaweb.models.Banco;
+import fatec.eletivaweb.dao.DAO;
+import fatec.eletivaweb.dao.DisciplinaDAO;
 import fatec.eletivaweb.models.Disciplina;
 
 
@@ -18,8 +20,9 @@ public class ShowDisciplinas implements Action {
 		
 		System.out.println("Listando Disciplinas");
 		
-		Banco banco = new Banco();
-		List<Disciplina> lista = banco.getDisciplina();
+		DAO<Disciplina> disciplinaDAO = new DisciplinaDAO();
+		List<Disciplina> lista = new ArrayList<Disciplina>();
+		lista = disciplinaDAO.read();
 			
 		request.setAttribute("disciplinas", lista);
 		

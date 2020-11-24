@@ -59,6 +59,7 @@ footer p {
 	text-align: end;
 }
 
+/* Cadastro */
 .form-area {
 	padding: 30px;
 	
@@ -85,4 +86,24 @@ textarea {
 
 .btn {
 	font-size: 20px;
+}
+
+/* Exibir Resultados */
+.list{
+	padding: 30px;
+	border: 1px solid #ced4da;
+	border-radius: 10px;
+	box-shadow: 1px 5px 20px black;
+	width: 50%;
+	margin: 100px auto;
+	font-size: 20px;	
+	background-image: linear-gradient(to right, #eeeeee, #f8f8ff);
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
 }

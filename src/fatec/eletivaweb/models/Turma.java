@@ -15,6 +15,12 @@ public class Turma {
 		
 	}
 	
+	public Turma(int id, String nome, String descricao) {
+		this.id = id;
+		this.nome = nome;
+		this.descricao = descricao;
+	}
+
 	public int getId() {
 		return id;
 	}

@@ -3,8 +3,9 @@ package fatec.eletivaweb.controller;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import fatec.eletivaweb.dao.AlunoDAO;
+import fatec.eletivaweb.dao.DAO;
 import fatec.eletivaweb.models.Aluno;
-import fatec.eletivaweb.models.Banco;
 
 public class CadastrarAluno implements Action{
 
@@ -16,11 +17,14 @@ public class CadastrarAluno implements Action{
 		
 		Aluno aluno = new Aluno(nome, turma);
 		
-		//Dao dao = new Dao();
-		//dao.cadastrar(aluno);
+		System.out.println("Acessando banco...");
+		try {
+			DAO<Aluno> alunoDAO = new AlunoDAO();
+			alunoDAO.create(aluno);
+		} catch (Exception e) {
+			System.out.println("Erro ao cadastrar: " + e);
+		}
 		
-		Banco banco = new Banco();
-		banco.addAluno(aluno);
 		
 		request.setAttribute("aluno", aluno.getNome());
 		

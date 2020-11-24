@@ -6,7 +6,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import fatec.eletivaweb.models.Banco;
+import fatec.eletivaweb.dao.DAO;
+import fatec.eletivaweb.dao.TurmaDAO;
 import fatec.eletivaweb.models.Turma;
 
 public class EditTurma implements Action{
@@ -20,10 +21,14 @@ public class EditTurma implements Action{
 		String descricao = request.getParameter("descricaoTurma");
 		int id = Integer.parseInt(request.getParameter("idTurma"));
 		
-		Banco banco = new Banco();
-		Turma turma = banco.buscaTurmaId(id);
-		turma.setNome(nome);
-		turma.setDescricao(descricao);
+		Turma user = new Turma(id, nome, descricao);
+		
+		System.out.println("Acessando banco...");
+		
+		DAO<Turma> turmaDAO = new TurmaDAO();
+		turmaDAO.update(user);
+		
+		System.out.println("Alteração realizada");
 		
 		return "redirect:entrada?action=ShowTurmas";
 	}

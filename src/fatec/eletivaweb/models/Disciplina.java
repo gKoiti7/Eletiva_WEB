@@ -17,6 +17,13 @@ public class Disciplina {
 		
 	}
 	
+	public Disciplina(int id, String nome, int carga, String ementa) {
+		this.id = id;
+		this.nome = nome;
+		this.cargaHoraria = carga;
+		this.ementa = ementa;
+	}
+
 	public int getId() {
 		return id;
 	}

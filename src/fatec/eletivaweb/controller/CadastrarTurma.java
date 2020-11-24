@@ -3,7 +3,8 @@ package fatec.eletivaweb.controller;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import fatec.eletivaweb.models.Banco;
+import fatec.eletivaweb.dao.DAO;
+import fatec.eletivaweb.dao.TurmaDAO;
 import fatec.eletivaweb.models.Turma;
 
 public class CadastrarTurma implements Action{
@@ -16,11 +17,13 @@ public class CadastrarTurma implements Action{
 		
 		Turma turma = new Turma(nome, descricao);
 		
-		//Dao dao = new Dao();
-		//dao.cadastrar(aluno);
-		
-		Banco banco = new Banco();
-		banco.addTurma(turma);
+		System.out.println("Acessando banco...");
+		try {
+			DAO<Turma> turmaDAO = new TurmaDAO();
+			turmaDAO.create(turma);
+		} catch (Exception e) {
+			System.out.println("Erro ao cadastrar: " + e);
+		}
 		
 		request.setAttribute("turma", turma.getNome());
 		

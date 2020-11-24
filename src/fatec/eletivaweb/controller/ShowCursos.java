@@ -1,13 +1,15 @@
 package fatec.eletivaweb.controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import fatec.eletivaweb.models.Banco;
+import fatec.eletivaweb.dao.CursoDAO;
+import fatec.eletivaweb.dao.DAO;
 import fatec.eletivaweb.models.Curso;
 
 
@@ -18,8 +20,9 @@ public class ShowCursos implements Action {
 		
 		System.out.println("Listando Cursos");
 		
-		Banco banco = new Banco();
-		List<Curso> lista = banco.getCurso();
+		DAO<Curso> cursoDAO = new CursoDAO();
+		List<Curso> lista = new ArrayList<Curso>();
+		lista = cursoDAO.read();
 			
 		request.setAttribute("cursos", lista);
 		

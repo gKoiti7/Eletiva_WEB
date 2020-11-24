@@ -11,6 +11,12 @@ public class Aluno {
 		this.turma = turma;
 	}
 	
+	public Aluno(int id, String nome, String turma) {
+		this.id = id;
+		this.nome = nome;
+		this.turma = turma;
+	}
+	
 	public Aluno() {
 		
 	}

@@ -7,6 +7,9 @@ public class Curso {
 	private String periodicidade;
 	private String descricao;
 	
+	public Curso() {
+		
+	}
 	
 	public Curso(String nome, String periodicidade, String descricao) {
 		this.nome = nome;
@@ -14,8 +17,11 @@ public class Curso {
 		this.descricao = descricao;
 	}
 	
-	public Curso() {
-		
+	public Curso(int id, String nome, String periodo, String descricao) {
+		this.id = id;
+		this.nome = nome;
+		this.periodicidade = periodo;
+		this.descricao = descricao;
 	}
 	
 	public String getNome() {

@@ -6,7 +6,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import fatec.eletivaweb.models.Banco;
+import fatec.eletivaweb.dao.DAO;
+import fatec.eletivaweb.dao.DisciplinaDAO;
 import fatec.eletivaweb.models.Disciplina;
 
 public class EditDisciplina implements Action{
@@ -21,11 +22,14 @@ public class EditDisciplina implements Action{
 		String ementa = request.getParameter("ementaDisciplina");
 		int id = Integer.parseInt(request.getParameter("idDisciplina"));
 		
-		Banco banco = new Banco();
-		Disciplina disciplina = banco.buscaDisciplinaId(id);
-		disciplina.setNome(nome);
-		disciplina.setCargaHoraria(carga);
-		disciplina.setEmenta(ementa);
+		Disciplina user = new Disciplina(id, nome, carga, ementa);
+		
+		System.out.println("Acessando banco...");
+		
+		DAO<Disciplina> disciplinaDAO = new DisciplinaDAO();
+		disciplinaDAO.update(user);
+		
+		System.out.println("Alteração realizada");
 		
 		return "redirect:entrada?action=ShowDisciplinas";
 	}

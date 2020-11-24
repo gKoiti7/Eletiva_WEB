@@ -1,13 +1,15 @@
 package fatec.eletivaweb.controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import fatec.eletivaweb.models.Banco;
+import fatec.eletivaweb.dao.DAO;
+import fatec.eletivaweb.dao.TurmaDAO;
 import fatec.eletivaweb.models.Turma;
 
 
@@ -18,8 +20,9 @@ public class ShowTurmas implements Action {
 		
 		System.out.println("Listando Turmas");
 		
-		Banco banco = new Banco();
-		List<Turma> lista = banco.getTurma();
+		DAO<Turma> turmaDAO = new TurmaDAO();
+		List<Turma> lista = new ArrayList<Turma>();
+		lista = turmaDAO.read();
 			
 		request.setAttribute("turmas", lista);
 		
