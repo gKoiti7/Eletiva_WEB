@@ -19,8 +19,8 @@ main {
 }
 
 .menu-header {
-	width: 20%;
-	margin: 20px 40%;
+	width: 100%;
+	margin: 20px ;
 	padding: 20px;
 
 	font-size: 20px;
@@ -33,6 +33,7 @@ main {
 	border: 1px solid #888888;
 	border-radius: 20px;
 	box-shadow: 5px 10px 10px #888888;
+	display: inline-block;
 }
 
 .menu-header:hover {
@@ -86,6 +87,7 @@ textarea {
 
 .btn {
 	font-size: 20px;
+	display: inline-block;
 }
 
 /* Exibir Resultados */
@@ -106,4 +108,19 @@ table, th, td {
 }
 th, td {
   padding: 15px;
+}
+
+#menuCadastro{
+	width:100%;
+	text-align: center;
+}
+
+.menu-main{
+	display: inline-block;
+	width:15%;
+}
+
+.subtitulo{
+	width:15%;
+	margin: 20px 15%;
 }
