@@ -1,7 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<%@ page import="java.util.List,fatec.eletivaweb.models.Curso" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,10 +7,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-	<h1>Lista de Cursos:</h1>
-	<h2>Curso ${ curso } cadastrado com sucesso!</h2>
-	
-	</ul>
+	<header>
+		<nav class="navbar">
+			<a href="index.jsp">
+				<img class="img.fluid" src="img/logo.png" />
+			</a>			
+			<h2>Sistema de Gestão Acadêmica </h2>
+			<label></label>		
+		</nav>
+	</header>
 </body>
 </html>

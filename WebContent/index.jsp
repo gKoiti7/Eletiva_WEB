@@ -14,44 +14,50 @@
 <body>
 	<header>
 		<nav class="navbar">
-			<img class="img.fluid" src="img/logo2.png" />
+			<a href="index.jsp">
+				<img class="img.fluid" src="img/logo.png" />
+			</a>			
 			<h2>Sistema de Gestão Acadêmica </h2>
 			<label></label>
 		</nav>
 	</header>
 	
 	<main>
-		<ul class="menu-main">
+		<form class="menu-main" action="${ linkEntradaServlet }" method="get">
 			<li class="li-index">
-				<a class="btn menu-header" href="/EletivaWeb/formAluno.jsp" role="button">
-					Alunos
-				</a>
+				<input type="hidden" name="action" value="Form" />
+				<input type="hidden" name="form" value="aluno" />
+				<button class="btn menu-header" type="submit">Aluno</button>
 			</li>
-			
+		</form>
+		<form class="menu-main" action="${ linkEntradaServlet }" method="get">	
 			<li class="li-index">
-				<a class="btn menu-header" href="/EletivaWeb/formProfessor.jsp" role="button">
-					Professores
-				</a>
+				<input type="hidden" name="action" value="Form" />
+				<input type="hidden" name="form" value="professor" />
+				<button class="btn menu-header" type="submit">Professores</button>
 			</li>	
-					
+		</form>	
+		<form class="menu-main" action="${ linkEntradaServlet }" method="get">	
 			<li class="li-index">
-				<a class="btn menu-header" href="/EletivaWeb/formCurso.jsp" role="button">				
-					Cursos
-				</a>
+				<input type="hidden" name="action" value="Form" />
+				<input type="hidden" name="form" value="curso" />
+				<button class="btn menu-header" type="submit">Curso</button>
 			</li>
-			
+		</form>	
+		<form class="menu-main" action="${ linkEntradaServlet }" method="get">	
 			<li class="li-index">
-				<a class="btn menu-header" href="/EletivaWeb/formDisciplina.jsp" role="button">
-					Disciplinas
-				</a>
+				<input type="hidden" name="action" value="Form" />
+				<input type="hidden" name="form" value="disciplina" />
+				<button class="btn menu-header" type="submit">Disciplina</button>
 			</li>
-			
+		</form>
+		<form class="menu-main" action="${ linkEntradaServlet }" method="get">	
 			<li class="li-index">
-				<a class="btn menu-header" href="/EletivaWeb/formTurma.jsp" role="button">
-					Turmas
-				</a>
+				<input type="hidden" name="action" value="Form" />
+				<input type="hidden" name="form" value="turma" />
+				<button class="btn menu-header" type="submit">Turma</button>
 			</li>
-		</ul>
+		</form>
 	</main>
 	
 	<footer>		
