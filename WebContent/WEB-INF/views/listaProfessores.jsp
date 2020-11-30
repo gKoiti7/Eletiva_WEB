@@ -21,7 +21,7 @@
 			<thead>
 				<tr>
 					<th scope="col">Nome</th>
-					<th scope="col">Turma</th>
+					<th scope="col">Titulação</th>
 					<th scope="col"></th>
 					<th scope="col"></th>
 				</tr>
