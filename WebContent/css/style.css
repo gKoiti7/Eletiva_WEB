@@ -5,8 +5,7 @@
 	justify-content: space-between; 
 	align-items: center;
 	
-	background-image: linear-gradient(to left, #eeeeee, #f8f8ff);
-	border-bottom: 1px solid black;
+	background-image: linear-gradient(to left, #EACACA , #f8f8ff);
 }
 
 main {
@@ -14,31 +13,28 @@ main {
 	padding: 30px;
 }
 
+
 .li-index {
 	list-style-type: none;
 }
 
 .menu-header {
+	font-family: Century Gothic;
 	width: 100%;
-	margin: 20px ;
 	padding: 20px;
 
 	font-size: 20px;
-	background-image: linear-gradient(to right, #eeeeee, #f8f8ff);
+	background-color: #FFBDBA  ;
 	
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	
-	border: 1px solid #888888;
-	border-radius: 20px;
-	box-shadow: 5px 10px 10px #888888;
-	display: inline-block;
 }
 
 .menu-header:hover {
 	cursor: pointer;
-	font-weight: bold;
+	background-color: #FF6F7C;
 }
 
 .menu-header a:hover {
@@ -52,24 +48,32 @@ main {
 
 footer {
 	margin-top: 80px;
-	padding: 0 0 0 20px;
+	padding: 80px 0 0 20px;
+	background-color: #E7E7E7;
+	display: flex;
 }
 
 footer p {
-	margin: 10px;
+	margin: auto;
 	text-align: end;
+	margin-bottom: 20px;
+	color: #787878;
 }
 
 /* Cadastro */
 .form-area {
+	
 	padding: 30px;
+	top: 0%;
 	
 	border: 1px solid #888888;
 	border-radius: 10px;
 	box-shadow: 5px 10px 10px #888888;
 	
 	font-size: 20px;	
-	background-image: linear-gradient(to right, #eeeeee, #f8f8ff);
+	background-color: #E6CBCD ;
+}
+	
 }
 
 .form-control {
@@ -111,8 +115,13 @@ th, td {
 }
 
 #menuCadastro{
-	width:100%;
+	background-color: #FFBDBA  ;
+	width:80%;
+	padding: 10px 10px 10px;
+	margin: auto;
 	text-align: center;
+	border-radius: 10px;
+	margin-top: 5%;
 }
 
 .menu-main{
@@ -121,6 +130,12 @@ th, td {
 }
 
 .subtitulo{
+	font-family: Century Gothic;
 	width:15%;
 	margin: 20px 15%;
+}
+
+h2{
+	font-family: Century Gothic;
+	font-weight: 100;
 }

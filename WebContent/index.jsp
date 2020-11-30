@@ -23,32 +23,30 @@
 	</header>
 	
 	<main>
-		<div>
-			<h1 class="subtitulo">Cadastro: </h1>
-		</div>
 		<div id="menuCadastro">
-			<form class="menu-main" action="${ linkEntradaServlet }" method="get">
+		<h1 class="subtitulo">Cadastro: </h1>
+			<form style="border-right:1px solid #FF6F7C;height:70px" class="menu-main" action="${ linkEntradaServlet }" method="get">
 				<li class="li-index">
 					<input type="hidden" name="action" value="Form" />
 					<input type="hidden" name="form" value="aluno" />
 					<button class="btn menu-header" type="submit">Aluno</button>
 				</li>
 			</form>
-			<form class="menu-main" action="${ linkEntradaServlet }" method="get">	
+			<form style="border-right:1px solid #FF6F7C;height:70px" class="menu-main" action="${ linkEntradaServlet }" method="get">	
 				<li class="li-index">
 					<input type="hidden" name="action" value="Form" />
 					<input type="hidden" name="form" value="professor" />
 					<button class="btn menu-header" type="submit">Professores</button>
 				</li>	
 			</form>	
-			<form class="menu-main" action="${ linkEntradaServlet }" method="get">	
+			<form style="border-right:1px solid #FF6F7C;height:70px" class="menu-main" action="${ linkEntradaServlet }" method="get">	
 				<li class="li-index">
 					<input type="hidden" name="action" value="Form" />
 					<input type="hidden" name="form" value="curso" />
 					<button class="btn menu-header" type="submit">Curso</button>
 				</li>
 			</form>	
-			<form class="menu-main" action="${ linkEntradaServlet }" method="get">	
+			<form style="border-right:1px solid #FF6F7C;height:70px" class="menu-main" action="${ linkEntradaServlet }" method="get">	
 				<li class="li-index">
 					<input type="hidden" name="action" value="Form" />
 					<input type="hidden" name="form" value="disciplina" />
@@ -64,39 +62,37 @@
 			</form>
 		</div>
 		
-		<div>
-			<h1 class="subtitulo">Consulta: </h1>
-		</div>
 		<div id="menuCadastro">
-			<form class="menu-main" action="./listaAluno.jsp" method="get">
+		<h1 class="subtitulo">Consulta: </h1>
+			<form style="border-right:1px solid #FF6F7C;height:70px" class="menu-main" action="${ linkEntradaServlet }" method="get">
 				<li class="li-index">
 					<input type="hidden" name="action" value="Form" />
 					<input type="hidden" name="form" value="aluno" />
 					<button class="btn menu-header" type="submit">Aluno</button>
 				</li>
 			</form>
-			<form class="menu-main" action="./listaCurso.jsp" method="get">	
+			<form style="border-right:1px solid #FF6F7C;height:70px" class="menu-main" action="${ linkEntradaServlet }" method="get">	
 				<li class="li-index">
 					<input type="hidden" name="action" value="Form" />
 					<input type="hidden" name="form" value="professor" />
 					<button class="btn menu-header" type="submit">Professores</button>
 				</li>	
 			</form>	
-			<form class="menu-main" action="./listaDisciplina.jsp" method="get">	
+			<form style="border-right:1px solid #FF6F7C;height:70px" class="menu-main" action="${ linkEntradaServlet }" method="get">	
 				<li class="li-index">
 					<input type="hidden" name="action" value="Form" />
 					<input type="hidden" name="form" value="curso" />
 					<button class="btn menu-header" type="submit">Curso</button>
 				</li>
 			</form>	
-			<form class="menu-main" action="./listaProfessor.jsp" method="get">	
+			<form style="border-right:1px solid #FF6F7C;height:70px" class="menu-main" action="${ linkEntradaServlet }" method="get">	
 				<li class="li-index">
 					<input type="hidden" name="action" value="Form" />
 					<input type="hidden" name="form" value="disciplina" />
 					<button class="btn menu-header" type="submit">Disciplina</button>
 				</li>
 			</form>
-			<form class="menu-main" action="./listaTurma.jsp" method="get">	
+			<form class="menu-main" action="${ linkEntradaServlet }" method="get">	
 				<li class="li-index">
 					<input type="hidden" name="action" value="Form" />
 					<input type="hidden" name="form" value="turma" />
