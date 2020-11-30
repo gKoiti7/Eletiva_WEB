@@ -14,26 +14,32 @@
 <body>
 	<c:import url="header.jsp" />
 	
-	<main class="container">		
+	<main class="container">
+	
+		
 		<form class="form-area" action="${ linkEntradaServlet }" method="post">
-			<h1>Cadastrando novo Aluno:</h1>
 			
-			<div class="form-group">
-				<label for="nomeAluno">Nome do Aluno:</label>
-				<input class="form-control" type="text" name="nomeAluno" id="nomeAluno" />
+			<div class="form-input">
+				<h1>Cadastrando novo Aluno:</h1>
+				
+				<div class="form-group">
+					<label for="nomeAluno">Nome do Aluno:</label>
+					<input class="form-control" type="text" name="nomeAluno" id="nomeAluno" />
+				</div>
+				
+				<div class="form-group">
+					<label for="turmaAluno">Turma:</label>
+					<input class="form-control" type="text" name="turmaAluno" id="turmaAluno" />
+				</div>
+				
+				<input type="hidden" name="action" value="CadastrarAluno" />
+				
+				<div class="form-footer">
+					<button type="submit" class="btn btn-secondary" href="listaAluno.jsp">Cadastrar</button>
+					<a class="btn btn-secondary" href="index.jsp" role="button">Voltar</a>
+				</div>	
 			</div>
-			
-			<div class="form-group">
-				<label for="turmaAluno">Turma:</label>
-				<input class="form-control" type="text" name="turmaAluno" id="turmaAluno" />
-			</div>
-			
-			<input type="hidden" name="action" value="CadastrarAluno" />
-			
-			<div class="form-footer">
-				<button type="submit" class="btn btn-secondary">Cadastrar</button>
-				<a class="btn btn-secondary" href="index.jsp" role="button">Voltar</a>
-			</div>			
+			<div>	
 		</form>
 	</main>
 	

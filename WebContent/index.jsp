@@ -23,41 +23,83 @@
 	</header>
 	
 	<main>
-		<form class="menu-main" action="${ linkEntradaServlet }" method="get">
-			<li class="li-index">
-				<input type="hidden" name="action" value="Form" />
-				<input type="hidden" name="form" value="aluno" />
-				<button class="btn menu-header" type="submit">Aluno</button>
-			</li>
-		</form>
-		<form class="menu-main" action="${ linkEntradaServlet }" method="get">	
-			<li class="li-index">
-				<input type="hidden" name="action" value="Form" />
-				<input type="hidden" name="form" value="professor" />
-				<button class="btn menu-header" type="submit">Professores</button>
-			</li>	
-		</form>	
-		<form class="menu-main" action="${ linkEntradaServlet }" method="get">	
-			<li class="li-index">
-				<input type="hidden" name="action" value="Form" />
-				<input type="hidden" name="form" value="curso" />
-				<button class="btn menu-header" type="submit">Curso</button>
-			</li>
-		</form>	
-		<form class="menu-main" action="${ linkEntradaServlet }" method="get">	
-			<li class="li-index">
-				<input type="hidden" name="action" value="Form" />
-				<input type="hidden" name="form" value="disciplina" />
-				<button class="btn menu-header" type="submit">Disciplina</button>
-			</li>
-		</form>
-		<form class="menu-main" action="${ linkEntradaServlet }" method="get">	
-			<li class="li-index">
-				<input type="hidden" name="action" value="Form" />
-				<input type="hidden" name="form" value="turma" />
-				<button class="btn menu-header" type="submit">Turma</button>
-			</li>
-		</form>
+		<div id="menuCadastro">
+		<h1 class="subtitulo">Cadastro: </h1>
+			<form style="border-right:1px solid #FF6F7C;height:70px" class="menu-main" action="${ linkEntradaServlet }" method="get">
+				<li class="li-index">
+					<input type="hidden" name="action" value="Form" />
+					<input type="hidden" name="form" value="aluno" />
+					<button class="btn menu-header" type="submit">Aluno</button>
+				</li>
+			</form>
+			<form style="border-right:1px solid #FF6F7C;height:70px" class="menu-main" action="${ linkEntradaServlet }" method="get">	
+				<li class="li-index">
+					<input type="hidden" name="action" value="Form" />
+					<input type="hidden" name="form" value="professor" />
+					<button class="btn menu-header" type="submit">Professores</button>
+				</li>	
+			</form>	
+			<form style="border-right:1px solid #FF6F7C;height:70px" class="menu-main" action="${ linkEntradaServlet }" method="get">	
+				<li class="li-index">
+					<input type="hidden" name="action" value="Form" />
+					<input type="hidden" name="form" value="curso" />
+					<button class="btn menu-header" type="submit">Curso</button>
+				</li>
+			</form>	
+			<form style="border-right:1px solid #FF6F7C;height:70px" class="menu-main" action="${ linkEntradaServlet }" method="get">	
+				<li class="li-index">
+					<input type="hidden" name="action" value="Form" />
+					<input type="hidden" name="form" value="disciplina" />
+					<button class="btn menu-header" type="submit">Disciplina</button>
+				</li>
+			</form>
+			<form class="menu-main" action="${ linkEntradaServlet }" method="get">	
+				<li class="li-index">
+					<input type="hidden" name="action" value="Form" />
+					<input type="hidden" name="form" value="turma" />
+					<button class="btn menu-header" type="submit">Turma</button>
+				</li>
+			</form>
+		</div>
+		
+		<div id="menuCadastro">
+		<h1 class="subtitulo">Consulta: </h1>
+			<form style="border-right:1px solid #FF6F7C;height:70px" class="menu-main" action="${ linkEntradaServlet }" method="get">
+				<li class="li-index">
+					<input type="hidden" name="action" value="ShowAlunos" />
+					<input type="hidden" name="lista" value="aluno" />
+					<button class="btn menu-header" type="submit">Aluno</button>
+				</li>
+			</form>
+			<form style="border-right:1px solid #FF6F7C;height:70px" class="menu-main" action="${ linkEntradaServlet }" method="get">	
+				<li class="li-index">
+					<input type="hidden" name="action" value="ShowProfessores" />
+					<input type="hidden" name="lista" value="professor" />
+					<button class="btn menu-header" type="submit">Professores</button>
+				</li>	
+			</form>	
+			<form style="border-right:1px solid #FF6F7C;height:70px" class="menu-main" action="${ linkEntradaServlet }" method="get">	
+				<li class="li-index">
+					<input type="hidden" name="action" value="ShowDisciplinas" />
+					<input type="hidden" name="lista" value="curso" />
+					<button class="btn menu-header" type="submit">Curso</button>
+				</li>
+			</form>	
+			<form style="border-right:1px solid #FF6F7C;height:70px" class="menu-main" action="${ linkEntradaServlet }" method="get">	
+				<li class="li-index">
+					<input type="hidden" name="action" value="ShowTurmas" />
+					<input type="hidden" name="lista" value="disciplina" />
+					<button class="btn menu-header" type="submit">Disciplina</button>
+				</li>
+			</form>
+			<form class="menu-main" action="${ linkEntradaServlet }" method="get">	
+				<li class="li-index">
+					<input type="hidden" name="action" value="Lista" />
+					<input type="hidden" name="lista" value="turma" />
+					<button class="btn menu-header" type="submit">Turma</button>
+				</li>
+			</form>
+		</div>
 	</main>
 	
 	<footer>		
