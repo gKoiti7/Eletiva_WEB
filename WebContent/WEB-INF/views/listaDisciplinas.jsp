@@ -21,7 +21,8 @@
 			<thead>
 				<tr>
 					<th scope="col">Nome</th>
-					<th scope="col">Turma</th>
+					<th scope="col">Carga Horária</th>
+					<th scope="col">Ementa</th>
 					<th scope="col"></th>
 					<th scope="col"></th>
 				</tr>
