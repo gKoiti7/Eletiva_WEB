@@ -17,7 +17,7 @@
 			<a href="index.jsp">
 				<img class="img.fluid" src="img/logo.png" />
 			</a>			
-			<h2>Sistema de Gestão Acadêmica </h2>
+			<h2>Sistema de GestÃ£o AcadÃªmica </h2>
 			<label></label>
 		</nav>
 	</header>
@@ -80,21 +80,21 @@
 			</form>	
 			<form style="border-right:1px solid #FF6F7C;height:70px" class="menu-main" action="${ linkEntradaServlet }" method="get">	
 				<li class="li-index">
-					<input type="hidden" name="action" value="ShowDisciplinas" />
+					<input type="hidden" name="action" value="ShowCursos" />
 					<input type="hidden" name="lista" value="curso" />
 					<button class="btn menu-header" type="submit">Curso</button>
 				</li>
 			</form>	
 			<form style="border-right:1px solid #FF6F7C;height:70px" class="menu-main" action="${ linkEntradaServlet }" method="get">	
 				<li class="li-index">
-					<input type="hidden" name="action" value="ShowTurmas" />
+					<input type="hidden" name="action" value="ShowDisciplinas" />
 					<input type="hidden" name="lista" value="disciplina" />
 					<button class="btn menu-header" type="submit">Disciplina</button>
 				</li>
 			</form>
 			<form class="menu-main" action="${ linkEntradaServlet }" method="get">	
 				<li class="li-index">
-					<input type="hidden" name="action" value="Lista" />
+					<input type="hidden" name="action" value="ShowTurmas" />
 					<input type="hidden" name="lista" value="turma" />
 					<button class="btn menu-header" type="submit">Turma</button>
 				</li>
