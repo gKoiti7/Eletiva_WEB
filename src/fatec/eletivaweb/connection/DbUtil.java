@@ -13,8 +13,8 @@ public class DbUtil {
             return connection;
         else {
             try { 
-                String user = "postgres";
-                String password = "12e45";
+                String user = "root";
+                String password = "";
                 String driver = "com.mysql.cj.jdbc.Driver";
                 Class.forName(driver);
                 connection = DriverManager.getConnection("jdbc:mysql://localhost/web?useTimezone=true&serverTimezone=UTC", user, password);

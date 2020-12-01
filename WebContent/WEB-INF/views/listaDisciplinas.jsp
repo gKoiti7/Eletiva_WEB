@@ -21,7 +21,7 @@
 			<thead>
 				<tr>
 					<th scope="col">Nome</th>
-					<th scope="col">Carga Hor√°ria</th>
+					<th scope="col">Carga Hor·ria</th>
 					<th scope="col">Ementa</th>
 					<th scope="col"></th>
 					<th scope="col"></th>
